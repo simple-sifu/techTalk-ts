@@ -20,7 +20,7 @@ function hired(randomSeed) {
     }
 }
 var codeSmithHired = hired(5);
-console.log("Codesmith student who was hired -", codeSmithHired);
+console.log("Codesmith Genius who was hired -", codeSmithHired);
 // optional it means num2 is not required 
 function hired_usingOptionalParmeter(randomSeed) {
     if (randomSeed)
@@ -31,8 +31,8 @@ function hired_usingOptionalParmeter(randomSeed) {
 var codeSmithHired_withOptionalParmeter = hired_usingOptionalParmeter(5);
 console.log("Codesmith student who was hired using optional parameter -", codeSmithHired_withOptionalParmeter);
 // default
-function hired_usingDefaultParameter(randomSeed, num2) {
-    if (num2 === void 0) { num2 = 10; }
+function hired_usingDefaultParameter(randomSeed) {
+    if (randomSeed === void 0) { randomSeed = 10; }
     return hired(randomSeed);
 }
 var codeSmithHired_usingDefaultParameter = hired_usingDefaultParameter(5);
@@ -40,8 +40,8 @@ console.log("Codesmith student who was hired using default parameter -", codeSmi
 // Interfaces
 function company(person) {
     var niceCompanies = ["Google", "Facebook", "CapitalOne", "American Express", "UPS", "BOA", "Anything", "Someplace Nice"];
-    var index = Math.floor(Math.random() * Math.floor(8));
-    console.log(person.firstName + " " + person.lastName + " will end up working at " + niceCompanies[index]);
+    var randomIndex = Math.floor(Math.random() * Math.floor(8));
+    console.log(person.firstName + " " + person.lastName + " will end up working at " + niceCompanies[randomIndex]);
 }
 var codeSmithStudent = {
     firstName: 'Jeho',
@@ -49,10 +49,9 @@ var codeSmithStudent = {
 };
 company(codeSmithStudent);
 var person = {
-    firstName: 'Yevgeniy',
-    lastName: ''
+    firstName: 'Yevgeniy'
 };
-function optionalCompany(person) {
-    console.log(company({ firstName: person.firstName, lastName: "No Last Name provided" }));
+function company_withOptionalParameter(person) {
+    console.log(company({ firstName: person.firstName, lastName: "Han" }));
 }
-optionalCompany(person);
+company_withOptionalParameter(person);
