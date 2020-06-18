@@ -1,55 +1,60 @@
 // Functions
-function hired(num1: number, num2: number){
 
-    let codeSmithStudents: string[] = ["Cameron","Denis","Jeho","Garrett","Linda", "Tommy", "Horatio", "Lia", "Rudo", "Ben", "Vessey"];
-    let num = num1 + num2;
-    if (num > 10){
-        num = 10
-        let index = Math.floor(Math.random() * Math.floor(num));
-        console.log(index);
-        return codeSmithStudents[index];
+const codeSmithGenius: string[] = ["Cameron","Denis","Jeho","Garrett","Linda", "Tommy", "Horatiu", "Lia", "Rudo", "Ben", "Vessey"];
+function hired(randomSeed: number){
+    
+
+    let max: number = 0;
+    let randomIndex: number = 0;
+    if (randomSeed){
+        if (randomSeed > codeSmithGenius.length){
+            max = codeSmithGenius.length;
+        }else{
+            max = randomSeed;
+        }
+        randomIndex = Math.floor(Math.random() * Math.floor(max));
+        return codeSmithGenius[randomIndex];
     }else{
-        return codeSmithStudents[num];
+        max = codeSmithGenius.length;
+        randomIndex = Math.floor(Math.random() * Math.floor(max));
+        return codeSmithGenius[randomIndex];
     }
 }
 
-const codeSmithHired = hired(5,10);
+const codeSmithHired = hired(5);
 console.log("Codesmith student who was hired -", codeSmithHired);
 
 
-// optional
-function optionalHired(num1: number, num2?: number){
-    if (num2)
-        return hired(num1, num2);
+// optional it means num2 is not required 
+function hired_usingOptionalParmeter(randomSeed?: number){
+    if (randomSeed)
+        return hired(randomSeed);
     else
-        return hired(num1, 4)
+        return hired(codeSmithGenius.length)
 }
 
-const codeSmithOptionalHired = optionalHired(5);
-console.log("Codesmith student who was hired using optionalHired -", codeSmithOptionalHired);
+const codeSmithHired_withOptionalParmeter = hired_usingOptionalParmeter(5);
+console.log("Codesmith student who was hired using optional parameter -", codeSmithHired_withOptionalParmeter);
 
 
 
 // default
-function defaultHired(num1: number, num2: number = 10){
+function hired_usingDefaultParameter(randomSeed: number, num2: number = 10){
 
-    return hired(num1, num2);
+    return hired(randomSeed);
 
 }
 
-const codeSmithDefaultHired = defaultHired(5);
-console.log("Codesmith student who was hired using defaultHired -", codeSmithDefaultHired);
-
-
-
+const codeSmithHired_usingDefaultParameter = hired_usingDefaultParameter(5);
+console.log("Codesmith student who was hired using default parameter -", codeSmithHired_usingDefaultParameter);
 
 
 // Interfaces
 function company(person: {firstName: string, lastName: string}){
-    let codeSmithStudents: Array<string> = ["Google","Facebook","CapitalOne","American Express","UPS", "BOA", "Anything", "Someplace Nice"];
+    let niceCompanies: Array<string> = ["Google","Facebook","CapitalOne","American Express","UPS", "BOA", "Anything", "Someplace Nice"];
     let index = Math.floor(Math.random() * Math.floor(8));
     
-    console.log(`${person.firstName} ${person.lastName} will end up working at ${codeSmithStudents[index]}`);
+    console.log(`${person.firstName} ${person.lastName} will end up working at ${niceCompanies[index]}`);
 }
 
 let codeSmithStudent = {
@@ -59,7 +64,7 @@ let codeSmithStudent = {
 
 company(codeSmithStudent);
 
-interface CodeSmithStudent{
+interface CodeSmithStudent_Interface{
     firstName: string;
     lastName?: string;
 }
@@ -70,12 +75,12 @@ let person = {
 
 }
 
-function optionalCompany(person: CodeSmithStudent){
+function company_withOptionalParameter(person: CodeSmithStudent_Interface){
 
     console.log(company({firstName: person.firstName, lastName: "No Last Name provided"}));
 }
 
-optionalCompany(person);
+company_withOptionalParameter(person);
 
 
 

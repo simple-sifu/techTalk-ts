@@ -1,37 +1,35 @@
 // TypeScript Basic Types
 
 // boolean
-let isCodesmithStudent: boolean = true;
+let isCodesmithStudent = true;
 
 // number
-let numCohort18: number = 23;
+let numCohort18 = 23;
 
 // string
-let coolHairCut: string = "Phil";
+let coolHairCut = "Phil";
 
 // string
-let sentence: string = `My name is ${coolHairCut}
- I am a teacher at Codesmith `;
- console.log(sentence);
+let sentence = `My name is ${coolHairCut}
+ I am a teacher and have the coolest HairCut at CodeSmith !!!`;
+//  console.log(sentence);
 
  // Arrays
  let codeSmithStudents: string[] = ["Cameron","Denis","Linda"];
- let codeSmith17: Array<string> = ["Jeho","Garrett","Cynthia"];
+ let codeSmith19: Array<string> = ["Jeho","Garrett","Cynthia"];
 
  //Tuples
- let person1: [string, number] = ['Chris', 22];
+ let techInterview: [string, number, string, number] = ['How many people passed the tech interview ?', 22, "How many tries? ", 10];
 
 
  // Enums
  enum AlgoLevel {Egon, High, Medium, Low};
-
  let lovesAlgo: AlgoLevel = AlgoLevel.Egon;
-
- console.log("lovesAlgo -", lovesAlgo);
+//  console.log("lovesAlgo -", lovesAlgo);
 
 
  // Any
- let randomValue: any = "NOOOOOOOO dont do this";
+ let randomValue: any = "NOOOOOOOOOOOOOOOOOO please dont do this !!!!  What would be the point of using TypeScript ????";
  randomValue = true;
  randomValue = "Cohort 19 is the best !";
 

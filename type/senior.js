@@ -1,40 +1,47 @@
 // Functions
-function hired(num1, num2) {
-    var codeSmithStudents = ["Cameron", "Denis", "Jeho", "Garrett", "Linda", "Tommy", "Horatio", "Lia", "Rudo", "Ben", "Vessey"];
-    var num = num1 + num2;
-    if (num > 10) {
-        num = 10;
-        var index = Math.floor(Math.random() * Math.floor(num));
-        console.log(index);
-        return codeSmithStudents[index];
+var codeSmithGenius = ["Cameron", "Denis", "Jeho", "Garrett", "Linda", "Tommy", "Horatiu", "Lia", "Rudo", "Ben", "Vessey"];
+function hired(randomSeed) {
+    var max = 0;
+    var randomIndex = 0;
+    if (randomSeed) {
+        if (randomSeed > codeSmithGenius.length) {
+            max = codeSmithGenius.length;
+        }
+        else {
+            max = randomSeed;
+        }
+        randomIndex = Math.floor(Math.random() * Math.floor(max));
+        return codeSmithGenius[randomIndex];
     }
     else {
-        return codeSmithStudents[num];
+        max = codeSmithGenius.length;
+        randomIndex = Math.floor(Math.random() * Math.floor(max));
+        return codeSmithGenius[randomIndex];
     }
 }
-var codeSmithHired = hired(5, 10);
+var codeSmithHired = hired(5);
 console.log("Codesmith student who was hired -", codeSmithHired);
-// optional
-function optionalHired(num1, num2) {
-    if (num2)
-        return hired(num1, num2);
+// optional it means num2 is not required 
+function hired_usingOptionalParmeter(randomSeed) {
+    if (randomSeed)
+        return hired(randomSeed);
     else
-        return hired(num1, 4);
+        return hired(codeSmithGenius.length);
 }
-var codeSmithOptionalHired = optionalHired(5);
-console.log("Codesmith student who was hired using optionalHired -", codeSmithOptionalHired);
+var codeSmithHired_withOptionalParmeter = hired_usingOptionalParmeter(5);
+console.log("Codesmith student who was hired using optional parameter -", codeSmithHired_withOptionalParmeter);
 // default
-function defaultHired(num1, num2) {
+function hired_usingDefaultParameter(randomSeed, num2) {
     if (num2 === void 0) { num2 = 10; }
-    return hired(num1, num2);
+    return hired(randomSeed);
 }
-var codeSmithDefaultHired = defaultHired(5);
-console.log("Codesmith student who was hired using defaultHired -", codeSmithDefaultHired);
+var codeSmithHired_usingDefaultParameter = hired_usingDefaultParameter(5);
+console.log("Codesmith student who was hired using default parameter -", codeSmithHired_usingDefaultParameter);
 // Interfaces
 function company(person) {
-    var codeSmithStudents = ["Google", "Facebook", "CapitalOne", "American Express", "UPS", "BOA", "Anything", "Someplace Nice"];
+    var niceCompanies = ["Google", "Facebook", "CapitalOne", "American Express", "UPS", "BOA", "Anything", "Someplace Nice"];
     var index = Math.floor(Math.random() * Math.floor(8));
-    console.log(person.firstName + " " + person.lastName + " will end up working at " + codeSmithStudents[index]);
+    console.log(person.firstName + " " + person.lastName + " will end up working at " + niceCompanies[index]);
 }
 var codeSmithStudent = {
     firstName: 'Jeho',

@@ -1,24 +1,33 @@
 // TypeScript Basic Types
-//boolean
+// boolean
 var isCodesmithStudent = true;
+// number
 var numCohort18 = 23;
-var popularCodesmithTeach = "My man SAM";
-var sentence = "My name is " + popularCodesmithTeach + "\n I am a student in Codesmith ";
-console.log(sentence);
-var n = null;
-var u = undefined;
-var list1 = [1, 2, 3];
-var list2 = [1, 2, 3];
-var person1 = ['Chris', 22];
-var Color;
-(function (Color) {
-    Color[Color["Red"] = 5] = "Red";
-    Color[Color["Green"] = 6] = "Green";
-    Color[Color["Blue"] = 7] = "Blue";
-})(Color || (Color = {}));
+// string
+var coolHairCut = "Phil";
+// string
+var sentence = "My name is " + coolHairCut + "\n I am a teacher and have the coolest HairCut at CodeSmith !!!";
+//  console.log(sentence);
+// Arrays
+var codeSmithStudents = ["Cameron", "Denis", "Linda"];
+var codeSmith19 = ["Jeho", "Garrett", "Cynthia"];
+//Tuples
+var techInterview = ['How many people passed the tech interview ?', 22, "How many tries? ", 10];
+// Enums
+var AlgoLevel;
+(function (AlgoLevel) {
+    AlgoLevel[AlgoLevel["Egon"] = 0] = "Egon";
+    AlgoLevel[AlgoLevel["High"] = 1] = "High";
+    AlgoLevel[AlgoLevel["Medium"] = 2] = "Medium";
+    AlgoLevel[AlgoLevel["Low"] = 3] = "Low";
+})(AlgoLevel || (AlgoLevel = {}));
 ;
-var c = Color.Green;
-console.log(c);
+var lovesAlgo = AlgoLevel.Egon;
+//  console.log("lovesAlgo -", lovesAlgo);
+// Any
+var randomValue = "NOOOOOOOOOOOOOOOOOO please dont do this !!!!  What would be the point of using TypeScript ????";
+randomValue = true;
+randomValue = "Cohort 19 is the best !";
 // var isTigerKingCool = true;
 // //number
 // var cohort18 = 23;
