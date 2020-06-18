@@ -26,7 +26,7 @@ alert(sizeName); // Displays 'Medium' as its value is 2 above
 let whatever: any = 'aaaaghhhhhh noooooo!';
 
 //void
-let sing = (): void => console.log('Lalalala')
+let sing = (): void => { console.log('Lalalala')}
 
 //null and undefined
 let meh: undefined = undefined;
