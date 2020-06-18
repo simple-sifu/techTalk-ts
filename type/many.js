@@ -1,15 +1,19 @@
+// TypeScript Basic Types
 //boolean
 var isCool = false;
 //number
 var age = 56;
+var hex = 0xf00d;
+var binary = 10;
+var octal = 484;
 //string
-var eyeColor = 'brown';
-eyeColor = 15;
+var hair = 'bald';
+// hair = 15;
 var favoriteQuote = "I'm not old, I'm only " + age;
 //Array
 var pets = ['cat', 'mouse', 'dragon'];
 var pets2 = ['pig', 'lion', 'dragon'];
-//Tuple
+//Tuple => A combination of data types
 var basket;
 basket = ['basketball', 10];
 //Enum

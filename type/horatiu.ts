@@ -6,10 +6,9 @@ Adding an import/export statement , TS treats this as a module
 */
  export {}
  let message = 'Hello World';
- console.log(message);
+ 
 
 
- let firstName: string = "12";
 //  console.log(firstName);
  let salary: number = 1000;
  
