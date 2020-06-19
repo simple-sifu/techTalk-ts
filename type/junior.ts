@@ -11,7 +11,7 @@ let coolHairCut: string = "Phil";
 
 // string
 let sentence: string = `\n\nMy name is ${coolHairCut}, I am a teacher and have the coolest HairCut at CodeSmith !!!\n\n`;
-//  console.log(sentence);
+ console.log(sentence);
 
  // Arrays
  let codeSmithStudents: string[] = ["Cameron","Denis","Linda"];
@@ -24,7 +24,7 @@ let sentence: string = `\n\nMy name is ${coolHairCut}, I am a teacher and have t
  // Enums
  enum AlgoLevel {Egon=10, High, Medium, Low};
  let lovesAlgo: AlgoLevel = AlgoLevel.Egon;
- console.log("\n\nlovesAlgo -", lovesAlgo + "\n\n");
+//  console.log("\n\nlovesAlgo -", lovesAlgo + "\n\n");
 
 
  // Any
