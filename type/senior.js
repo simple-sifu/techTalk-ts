@@ -4,18 +4,11 @@ console.log("************* Hired *************************");
 console.log("\n");
 var codeSmithGenius = ["Cameron", "Denis", "Jeho", "Garrett", "Linda", "Fan", "Lia", "Rudo", "Ben", "Vessey"];
 function hired(randomSeed) {
-    var max = 0;
-    var randomIndex = 0;
-    if (randomSeed > codeSmithGenius.length) {
-        max = codeSmithGenius.length;
-    }
-    else {
-        max = randomSeed;
-    }
-    randomIndex = Math.floor(Math.random() * Math.floor(max));
+    randomSeed = randomSeed || 10;
+    var max = randomSeed > codeSmithGenius.length ? codeSmithGenius.length : randomSeed;
+    var randomIndex = Math.floor(Math.random() * Math.floor(max));
     return codeSmithGenius[randomIndex];
 }
-// 
 var codeSmithHired = hired(5);
 console.log("Codesmith Genius who was hired -", codeSmithHired, '\n\n');
 // Interfaces

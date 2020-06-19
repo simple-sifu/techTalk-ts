@@ -6,24 +6,18 @@ console.log("\n")
 
 const codeSmithGenius: string[] = ["Cameron","Denis","Jeho","Garrett","Linda", "Fan", "Lia", "Rudo", "Ben", "Vessey"];
 function hired(randomSeed: number){
+
+    randomSeed = randomSeed || 10;
+
+    let max = randomSeed > codeSmithGenius.length ? codeSmithGenius.length : randomSeed;
     
+    let randomIndex = Math.floor(Math.random() * Math.floor(max));
 
-    let max: number = 0;
-    let randomIndex: number = 0;
- 
-
-    if (randomSeed > codeSmithGenius.length){
-        max = codeSmithGenius.length;
-    }else{
-        max = randomSeed;
-    }
-    randomIndex = Math.floor(Math.random() * Math.floor(max));
     return codeSmithGenius[randomIndex];
 
-
 }
-// 
-const codeSmithHired = hired(5);
+
+const codeSmithHired = hired(6);
 console.log("Codesmith Genius who was hired -", codeSmithHired, '\n\n');
 
 
@@ -45,14 +39,14 @@ console.log("Codesmith Genius who was hired -", codeSmithHired, '\n\n');
 // console.log("\n\n***************************************************************");
 // console.log(    "****************** Interfaces    ******************************");
 // console.log("\n")
-interface CodeSmithStudent_Interface{
+interface person_Interface{
     firstName: string;
     lastName: string;
 }
 
 
 // Interfaces
-function company(codeSmithStudent: CodeSmithStudent_Interface){
+function company(codeSmithStudent: person_Interface){
 
     let niceCompanies: Array<string> = ["Google","Facebook","CapitalOne","American Express","UPS", "BOA", "Anything", "Someplace Nice"];
 
@@ -66,7 +60,7 @@ let codeSmithStudent = {
     lastName: 'Cruz'
 }
 
-// company(codeSmithStudent);
+ company(codeSmithStudent);
 
 
 
