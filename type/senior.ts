@@ -1,8 +1,8 @@
 // Functions
 
-console.log("\n\n*********************************************");
-console.log(    "************* Hired *************************");
-console.log("\n")
+// console.log("\n\n*********************************************");
+// console.log(    "************* Hired *************************");
+// console.log("\n")
 
 const codeSmithGenius: string[] = ["Cameron","Denis","Jeho","Garrett","Linda", "Fan", "Lia", "Rudo", "Ben", "Vessey"];
 function hired(randomSeed: number){
@@ -24,7 +24,7 @@ function hired(randomSeed: number){
 }
 // 
 const codeSmithHired = hired(5);
-console.log("Codesmith Genius who was hired -", codeSmithHired);
+// console.log("Codesmith Genius who was hired -", codeSmithHired);
 
 
 
@@ -34,9 +34,9 @@ console.log("Codesmith Genius who was hired -", codeSmithHired);
 
 
 
-console.log("\n\n*********************************************************************");
-console.log(    "**********    Hired using optional parameters    ********************");
-console.log("\n")
+// console.log("\n\n*********************************************************************");
+// console.log(    "**********    Hired using optional parameters    ********************");
+// console.log("\n")
 
 // optional it means num2 is not required 
 function hired_usingOptionalParmeter(randomSeed?: number){
@@ -47,7 +47,7 @@ function hired_usingOptionalParmeter(randomSeed?: number){
 }
 
 const codeSmithHired_withOptionalParmeter = hired_usingOptionalParmeter(5);
-console.log("Codesmith student who was hired using optional parameter -", codeSmithHired_withOptionalParmeter);
+// console.log("Codesmith student who was hired using optional parameter -", codeSmithHired_withOptionalParmeter);
 
 
 
@@ -66,9 +66,9 @@ console.log("Codesmith student who was hired using optional parameter -", codeSm
 
 
 
-console.log("\n\n*******************************************************************");
-console.log(    "********** Hired using default parameters    **********************");
-console.log("\n")
+// console.log("\n\n*******************************************************************");
+// console.log(    "********** Hired using default parameters    **********************");
+// console.log("\n")
 
 // default
 function hired_usingDefaultParameter(randomSeed: number = 10){
@@ -78,7 +78,7 @@ function hired_usingDefaultParameter(randomSeed: number = 10){
 }
 
 const codeSmithHired_usingDefaultParameter = hired_usingDefaultParameter(5);
-console.log("Codesmith student who was hired using default parameter -", codeSmithHired_usingDefaultParameter);
+// console.log("Codesmith student who was hired using default parameter -", codeSmithHired_usingDefaultParameter);
 
 
 
@@ -92,9 +92,9 @@ console.log("Codesmith student who was hired using default parameter -", codeSmi
 
 
 
-console.log("\n\n***************************************************************");
-console.log(    "****************** Interfaces    ******************************");
-console.log("\n")
+// console.log("\n\n***************************************************************");
+// console.log(    "****************** Interfaces    ******************************");
+// console.log("\n")
 
 
 
@@ -111,7 +111,7 @@ let codeSmithStudent = {
     lastName: 'Cruz'
 }
 
-company(codeSmithStudent);
+// company(codeSmithStudent);
 
 
 
@@ -125,9 +125,9 @@ company(codeSmithStudent);
 
 
 
-console.log("\n\n******************************************************************");
-console.log(    "*********** Interfaces with optional lastName   ******************");
-console.log("\n")
+// console.log("\n\n******************************************************************");
+// console.log(    "*********** Interfaces with optional lastName   ******************");
+// console.log("\n")
 
 
 interface CodeSmithStudent_Interface{
@@ -144,7 +144,7 @@ function company_withOptionalParameter(person: CodeSmithStudent_Interface){
     console.log(company({firstName: person.firstName, lastName: "Han"}));
 }
 
-company_withOptionalParameter(person);
+// company_withOptionalParameter(person);
 
 console.log("\n\n");
 

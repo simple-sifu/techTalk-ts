@@ -1,7 +1,7 @@
 // Functions
-console.log("\n\n*********************************************");
-console.log("************* Hired *************************");
-console.log("\n");
+// console.log("\n\n*********************************************");
+// console.log(    "************* Hired *************************");
+// console.log("\n")
 var codeSmithGenius = ["Cameron", "Denis", "Jeho", "Garrett", "Linda", "Fan", "Lia", "Rudo", "Ben", "Vessey"];
 function hired(randomSeed) {
     var max = 0;
@@ -17,10 +17,10 @@ function hired(randomSeed) {
 }
 // 
 var codeSmithHired = hired(5);
-console.log("Codesmith Genius who was hired -", codeSmithHired);
-console.log("\n\n*********************************************************************");
-console.log("**********    Hired using optional parameters    ********************");
-console.log("\n");
+// console.log("Codesmith Genius who was hired -", codeSmithHired);
+// console.log("\n\n*********************************************************************");
+// console.log(    "**********    Hired using optional parameters    ********************");
+// console.log("\n")
 // optional it means num2 is not required 
 function hired_usingOptionalParmeter(randomSeed) {
     if (randomSeed)
@@ -29,20 +29,20 @@ function hired_usingOptionalParmeter(randomSeed) {
         return hired(codeSmithGenius.length);
 }
 var codeSmithHired_withOptionalParmeter = hired_usingOptionalParmeter(5);
-console.log("Codesmith student who was hired using optional parameter -", codeSmithHired_withOptionalParmeter);
-console.log("\n\n*******************************************************************");
-console.log("********** Hired using default parameters    **********************");
-console.log("\n");
+// console.log("Codesmith student who was hired using optional parameter -", codeSmithHired_withOptionalParmeter);
+// console.log("\n\n*******************************************************************");
+// console.log(    "********** Hired using default parameters    **********************");
+// console.log("\n")
 // default
 function hired_usingDefaultParameter(randomSeed) {
     if (randomSeed === void 0) { randomSeed = 10; }
     return hired(randomSeed);
 }
 var codeSmithHired_usingDefaultParameter = hired_usingDefaultParameter(5);
-console.log("Codesmith student who was hired using default parameter -", codeSmithHired_usingDefaultParameter);
-console.log("\n\n***************************************************************");
-console.log("****************** Interfaces    ******************************");
-console.log("\n");
+// console.log("Codesmith student who was hired using default parameter -", codeSmithHired_usingDefaultParameter);
+// console.log("\n\n***************************************************************");
+// console.log(    "****************** Interfaces    ******************************");
+// console.log("\n")
 // Interfaces
 function company(person) {
     var niceCompanies = ["Google", "Facebook", "CapitalOne", "American Express", "UPS", "BOA", "Anything", "Someplace Nice"];
@@ -53,15 +53,11 @@ var codeSmithStudent = {
     firstName: 'Jeho',
     lastName: 'Cruz'
 };
-company(codeSmithStudent);
-console.log("\n\n******************************************************************");
-console.log("*********** Interfaces with optional lastName   ******************");
-console.log("\n");
 var person = {
     firstName: 'Yevgeniy'
 };
 function company_withOptionalParameter(person) {
     console.log(company({ firstName: person.firstName, lastName: "Han" }));
 }
-company_withOptionalParameter(person);
+// company_withOptionalParameter(person);
 console.log("\n\n");
