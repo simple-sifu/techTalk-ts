@@ -7,7 +7,7 @@ var numCohort18 = 23;
 var coolHairCut = "Phil";
 // string
 var sentence = "\n\nMy name is " + coolHairCut + ", I am a teacher and have the coolest HairCut at CodeSmith !!!\n\n";
-console.log(sentence);
+//  console.log(sentence);
 // Arrays
 var codeSmithStudents = ["Cameron", "Denis", "Linda"];
 var codeSmith19 = ["Jeho", "Garrett", "Cynthia"];

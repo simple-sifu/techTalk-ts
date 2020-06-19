@@ -9,7 +9,7 @@ function hired(randomSeed) {
     var randomIndex = Math.floor(Math.random() * Math.floor(max));
     return codeSmithGenius[randomIndex];
 }
-var codeSmithHired = hired(6);
+var codeSmithHired = hired(5);
 console.log("Codesmith Genius who was hired -", codeSmithHired, '\n\n');
 // Interfaces
 function company(codeSmithStudent) {
