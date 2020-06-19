@@ -6,7 +6,7 @@ var numCohort18 = 23;
 // string
 var coolHairCut = "Phil";
 // string
-var sentence = "My name is " + coolHairCut + "\n I am a teacher and have the coolest HairCut at CodeSmith !!!";
+var sentence = "My name is " + coolHairCut + ", I am a teacher and have the coolest HairCut at CodeSmith !!!";
 //  console.log(sentence);
 // Arrays
 var codeSmithStudents = ["Cameron", "Denis", "Linda"];
@@ -23,7 +23,7 @@ var AlgoLevel;
 })(AlgoLevel || (AlgoLevel = {}));
 ;
 var lovesAlgo = AlgoLevel.Egon;
-//  console.log("lovesAlgo -", lovesAlgo);
+console.log("lovesAlgo -", lovesAlgo);
 // Any
 var randomValue = "NOOOOOOOOOOOOOOOOOO please dont do this !!!!  What would be the point of using TypeScript ????";
 randomValue = true;

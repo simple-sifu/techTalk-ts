@@ -10,8 +10,7 @@ let numCohort18: number = 23;
 let coolHairCut: string = "Phil";
 
 // string
-let sentence: string = `My name is ${coolHairCut}
- I am a teacher and have the coolest HairCut at CodeSmith !!!`;
+let sentence: string = `My name is ${coolHairCut}, I am a teacher and have the coolest HairCut at CodeSmith !!!`;
 //  console.log(sentence);
 
  // Arrays
@@ -25,7 +24,7 @@ let sentence: string = `My name is ${coolHairCut}
  // Enums
  enum AlgoLevel {Egon, High, Medium, Low};
  let lovesAlgo: AlgoLevel = AlgoLevel.Egon;
-//  console.log("lovesAlgo -", lovesAlgo);
+ console.log("lovesAlgo -", lovesAlgo);
 
 
  // Any
