@@ -1,8 +1,8 @@
 // Functions
 
-// console.log("\n\n*********************************************");
-// console.log(    "************* Hired *************************");
-// console.log("\n")
+console.log("\n\n*********************************************");
+console.log(    "************* Hired *************************");
+console.log("\n")
 
 const codeSmithGenius: string[] = ["Cameron","Denis","Jeho","Garrett","Linda", "Fan", "Lia", "Rudo", "Ben", "Vessey"];
 function hired(randomSeed: number){
@@ -24,7 +24,7 @@ function hired(randomSeed: number){
 }
 // 
 const codeSmithHired = hired(5);
-// console.log("Codesmith Genius who was hired -", codeSmithHired);
+console.log("Codesmith Genius who was hired -", codeSmithHired, '\n\n');
 
 
 

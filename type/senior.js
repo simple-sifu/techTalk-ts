@@ -1,7 +1,7 @@
 // Functions
-// console.log("\n\n*********************************************");
-// console.log(    "************* Hired *************************");
-// console.log("\n")
+console.log("\n\n*********************************************");
+console.log("************* Hired *************************");
+console.log("\n");
 var codeSmithGenius = ["Cameron", "Denis", "Jeho", "Garrett", "Linda", "Fan", "Lia", "Rudo", "Ben", "Vessey"];
 function hired(randomSeed) {
     var max = 0;
@@ -17,10 +17,7 @@ function hired(randomSeed) {
 }
 // 
 var codeSmithHired = hired(5);
-// console.log("Codesmith Genius who was hired -", codeSmithHired);
-console.log("\n\n***************************************************************");
-console.log("****************** Interfaces    ******************************");
-console.log("\n");
+console.log("Codesmith Genius who was hired -", codeSmithHired, '\n\n');
 // Interfaces
 function company(codeSmithStudent) {
     var niceCompanies = ["Google", "Facebook", "CapitalOne", "American Express", "UPS", "BOA", "Anything", "Someplace Nice"];
@@ -31,4 +28,4 @@ var codeSmithStudent = {
     firstName: 'Jeho',
     lastName: 'Cruz'
 };
-company(codeSmithStudent);
+// company(codeSmithStudent);
