@@ -1,16 +1,16 @@
 // TypeScript Basic Types
 
 // boolean
-let isCodesmithStudent = true;
+let isCodesmithStudent: boolean = true;
 
 // number
-let numCohort18 = 23;
+let numCohort18: number = 23;
 
 // string
-let coolHairCut = "Phil";
+let coolHairCut: string = "Phil";
 
 // string
-let sentence = `My name is ${coolHairCut}
+let sentence : string = `My name is ${coolHairCut}
  I am a teacher and have the coolest HairCut at CodeSmith !!!`;
 //  console.log(sentence);
 
