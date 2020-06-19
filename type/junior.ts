@@ -10,7 +10,7 @@ let numCohort18: number = 23;
 let coolHairCut: string = "Phil";
 
 // string
-let sentence : string = `My name is ${coolHairCut}
+let sentence: string = `My name is ${coolHairCut}
  I am a teacher and have the coolest HairCut at CodeSmith !!!`;
 //  console.log(sentence);
 

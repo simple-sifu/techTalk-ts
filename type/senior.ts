@@ -1,5 +1,9 @@
 // Functions
 
+console.log("\n\n ***************************************");
+console.log("************* Hired *************************");
+console.log("\n")
+
 const codeSmithGenius: string[] = ["Cameron","Denis","Jeho","Garrett","Linda", "Tommy", "Horatiu", "Lia", "Rudo", "Ben", "Vessey"];
 function hired(randomSeed: number){
     
@@ -25,6 +29,10 @@ const codeSmithHired = hired(5);
 console.log("Codesmith Genius who was hired -", codeSmithHired);
 
 
+console.log("\n\n *************************************************************");
+console.log("********** Hired using Optional Parameters    ********************");
+console.log("\n")
+
 // optional it means num2 is not required 
 function hired_usingOptionalParmeter(randomSeed: number){
     if (randomSeed)
@@ -36,7 +44,9 @@ function hired_usingOptionalParmeter(randomSeed: number){
 const codeSmithHired_withOptionalParmeter = hired_usingOptionalParmeter(5);
 console.log("Codesmith student who was hired using optional parameter -", codeSmithHired_withOptionalParmeter);
 
-
+console.log("\n\n **************************************************************");
+console.log("********** Hired using Default Parameters    **********************");
+console.log("\n")
 
 // default
 function hired_usingDefaultParameter(randomSeed: number = 10){
@@ -47,6 +57,12 @@ function hired_usingDefaultParameter(randomSeed: number = 10){
 
 const codeSmithHired_usingDefaultParameter = hired_usingDefaultParameter(5);
 console.log("Codesmith student who was hired using default parameter -", codeSmithHired_usingDefaultParameter);
+
+
+console.log("\n\n ************************************************************");
+console.log("****************** Interfaces    ******************************");
+console.log("\n")
+
 
 
 // Interfaces
@@ -64,6 +80,11 @@ let codeSmithStudent = {
 
 company(codeSmithStudent);
 
+console.log("\n\n **************************************************************");
+console.log("*********** Interfaces with optional lastName   ******************");
+console.log("\n")
+
+
 interface CodeSmithStudent_Interface{
     firstName: string;
     lastName?: string;
@@ -80,6 +101,6 @@ function company_withOptionalParameter(person: CodeSmithStudent_Interface){
 
 company_withOptionalParameter(person);
 
-
+console.log("\n\n");
 
 
