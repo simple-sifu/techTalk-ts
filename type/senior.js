@@ -1,5 +1,5 @@
 // Functions
-console.log("\n\n ***************************************");
+console.log("\n\n*********************************************");
 console.log("************* Hired *************************");
 console.log("\n");
 var codeSmithGenius = ["Cameron", "Denis", "Jeho", "Garrett", "Linda", "Tommy", "Horatiu", "Lia", "Rudo", "Ben", "Vessey"];
@@ -24,8 +24,8 @@ function hired(randomSeed) {
 }
 var codeSmithHired = hired(5);
 console.log("Codesmith Genius who was hired -", codeSmithHired);
-console.log("\n\n *************************************************************");
-console.log("********** Hired using Optional Parameters    ********************");
+console.log("\n\n*********************************************************************");
+console.log("**********    Hired using optional parameters    ********************");
 console.log("\n");
 // optional it means num2 is not required 
 function hired_usingOptionalParmeter(randomSeed) {
@@ -36,8 +36,8 @@ function hired_usingOptionalParmeter(randomSeed) {
 }
 var codeSmithHired_withOptionalParmeter = hired_usingOptionalParmeter(5);
 console.log("Codesmith student who was hired using optional parameter -", codeSmithHired_withOptionalParmeter);
-console.log("\n\n **************************************************************");
-console.log("********** Hired using Default Parameters    **********************");
+console.log("\n\n*******************************************************************");
+console.log("********** Hired using default parameters    **********************");
 console.log("\n");
 // default
 function hired_usingDefaultParameter(randomSeed) {
@@ -46,7 +46,7 @@ function hired_usingDefaultParameter(randomSeed) {
 }
 var codeSmithHired_usingDefaultParameter = hired_usingDefaultParameter(5);
 console.log("Codesmith student who was hired using default parameter -", codeSmithHired_usingDefaultParameter);
-console.log("\n\n ************************************************************");
+console.log("\n\n***************************************************************");
 console.log("****************** Interfaces    ******************************");
 console.log("\n");
 // Interfaces
@@ -60,7 +60,7 @@ var codeSmithStudent = {
     lastName: 'Cruz'
 };
 company(codeSmithStudent);
-console.log("\n\n **************************************************************");
+console.log("\n\n******************************************************************");
 console.log("*********** Interfaces with optional lastName   ******************");
 console.log("\n");
 var person = {
