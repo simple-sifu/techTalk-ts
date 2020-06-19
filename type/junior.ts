@@ -24,7 +24,7 @@ let sentence: string = `\n\nMy name is ${coolHairCut}, I am a teacher and have t
  // Enums
  enum AlgoLevel {Egon=10, High, Medium, Low};
  let lovesAlgo: AlgoLevel = AlgoLevel.Egon;
- console.log("\n\nlovesAlgo -", lovesAlgo + "\n\n");
+//  console.log("\n\nlovesAlgo -", lovesAlgo + "\n\n");
 
 
  // Any

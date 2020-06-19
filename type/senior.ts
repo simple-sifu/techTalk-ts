@@ -5,7 +5,7 @@ console.log(    "************* Hired *************************");
 console.log("\n")
 
 const codeSmithGenius: string[] = ["Cameron","Denis","Jeho","Garrett","Linda", "Fan", "Lia", "Rudo", "Ben", "Vessey"];
-function hired(randomSeed: number){
+function hired(randomSeed?: number){
 
     randomSeed = randomSeed || 10;
 
@@ -17,7 +17,7 @@ function hired(randomSeed: number){
 
 }
 
-const codeSmithHired = hired(6);
+const codeSmithHired = hired();
 console.log("Codesmith Genius who was hired -", codeSmithHired, '\n\n');
 
 
@@ -41,7 +41,7 @@ console.log("Codesmith Genius who was hired -", codeSmithHired, '\n\n');
 // console.log("\n")
 interface person_Interface{
     firstName: string;
-    lastName: string;
+    lastName?: string;
 }
 
 
@@ -60,7 +60,7 @@ let codeSmithStudent = {
     lastName: 'Cruz'
 }
 
- company(codeSmithStudent);
+//  company(codeSmithStudent);
 
 
 
