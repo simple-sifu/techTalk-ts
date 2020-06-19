@@ -10,8 +10,8 @@ let numCohort18: number = 23;
 let coolHairCut: string = "Phil";
 
 // string
-let sentence: string = `My name is ${coolHairCut}, I am a teacher and have the coolest HairCut at CodeSmith !!!`;
-//  console.log(sentence);
+let sentence: string = `\n\nMy name is ${coolHairCut}, I am a teacher and have the coolest HairCut at CodeSmith !!!\n\n`;
+ console.log(sentence);
 
  // Arrays
  let codeSmithStudents: string[] = ["Cameron","Denis","Linda"];
@@ -22,9 +22,9 @@ let sentence: string = `My name is ${coolHairCut}, I am a teacher and have the c
 
 
  // Enums
- enum AlgoLevel {Egon, High, Medium, Low};
+ enum AlgoLevel {Egon=10, High, Medium, Low};
  let lovesAlgo: AlgoLevel = AlgoLevel.Egon;
- console.log("lovesAlgo -", lovesAlgo);
+ console.log("\n\nlovesAlgo -", lovesAlgo + "\n\n");
 
 
  // Any

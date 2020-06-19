@@ -6,8 +6,8 @@ var numCohort18 = 23;
 // string
 var coolHairCut = "Phil";
 // string
-var sentence = "My name is " + coolHairCut + ", I am a teacher and have the coolest HairCut at CodeSmith !!!";
-//  console.log(sentence);
+var sentence = "\n\nMy name is " + coolHairCut + ", I am a teacher and have the coolest HairCut at CodeSmith !!!\n\n";
+console.log(sentence);
 // Arrays
 var codeSmithStudents = ["Cameron", "Denis", "Linda"];
 var codeSmith19 = ["Jeho", "Garrett", "Cynthia"];
@@ -16,14 +16,14 @@ var techInterview = ['How many people passed the tech interview ?', 22, "How man
 // Enums
 var AlgoLevel;
 (function (AlgoLevel) {
-    AlgoLevel[AlgoLevel["Egon"] = 0] = "Egon";
-    AlgoLevel[AlgoLevel["High"] = 1] = "High";
-    AlgoLevel[AlgoLevel["Medium"] = 2] = "Medium";
-    AlgoLevel[AlgoLevel["Low"] = 3] = "Low";
+    AlgoLevel[AlgoLevel["Egon"] = 10] = "Egon";
+    AlgoLevel[AlgoLevel["High"] = 11] = "High";
+    AlgoLevel[AlgoLevel["Medium"] = 12] = "Medium";
+    AlgoLevel[AlgoLevel["Low"] = 13] = "Low";
 })(AlgoLevel || (AlgoLevel = {}));
 ;
 var lovesAlgo = AlgoLevel.Egon;
-console.log("lovesAlgo -", lovesAlgo);
+console.log("\n\nlovesAlgo -", lovesAlgo + "\n\n");
 // Any
 var randomValue = "NOOOOOOOOOOOOOOOOOO please dont do this !!!!  What would be the point of using TypeScript ????";
 randomValue = true;
