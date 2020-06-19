@@ -2,26 +2,20 @@
 console.log("\n\n*********************************************");
 console.log("************* Hired *************************");
 console.log("\n");
-var codeSmithGenius = ["Cameron", "Denis", "Jeho", "Garrett", "Linda", "Tommy", "Horatiu", "Lia", "Rudo", "Ben", "Vessey"];
+var codeSmithGenius = ["Cameron", "Denis", "Jeho", "Garrett", "Linda", "Fan", "Lia", "Rudo", "Ben", "Vessey"];
 function hired(randomSeed) {
     var max = 0;
     var randomIndex = 0;
-    if (randomSeed) {
-        if (randomSeed > codeSmithGenius.length) {
-            max = codeSmithGenius.length;
-        }
-        else {
-            max = randomSeed;
-        }
-        randomIndex = Math.floor(Math.random() * Math.floor(max));
-        return codeSmithGenius[randomIndex];
+    if (randomSeed > codeSmithGenius.length) {
+        max = codeSmithGenius.length;
     }
     else {
-        max = codeSmithGenius.length;
-        randomIndex = Math.floor(Math.random() * Math.floor(max));
-        return codeSmithGenius[randomIndex];
+        max = randomSeed;
     }
+    randomIndex = Math.floor(Math.random() * Math.floor(max));
+    return codeSmithGenius[randomIndex];
 }
+// 
 var codeSmithHired = hired(5);
 console.log("Codesmith Genius who was hired -", codeSmithHired);
 console.log("\n\n*********************************************************************");

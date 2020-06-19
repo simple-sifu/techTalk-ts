@@ -4,29 +4,34 @@ console.log("\n\n*********************************************");
 console.log(    "************* Hired *************************");
 console.log("\n")
 
-const codeSmithGenius: string[] = ["Cameron","Denis","Jeho","Garrett","Linda", "Tommy", "Horatiu", "Lia", "Rudo", "Ben", "Vessey"];
+const codeSmithGenius: string[] = ["Cameron","Denis","Jeho","Garrett","Linda", "Fan", "Lia", "Rudo", "Ben", "Vessey"];
 function hired(randomSeed: number){
     
 
     let max: number = 0;
     let randomIndex: number = 0;
-    if (randomSeed){
-        if (randomSeed > codeSmithGenius.length){
-            max = codeSmithGenius.length;
-        }else{
-            max = randomSeed;
-        }
-        randomIndex = Math.floor(Math.random() * Math.floor(max));
-        return codeSmithGenius[randomIndex];
-    }else{
-        max = codeSmithGenius.length;
-        randomIndex = Math.floor(Math.random() * Math.floor(max));
-        return codeSmithGenius[randomIndex];
-    }
-}
+ 
 
+    if (randomSeed > codeSmithGenius.length){
+        max = codeSmithGenius.length;
+    }else{
+        max = randomSeed;
+    }
+    randomIndex = Math.floor(Math.random() * Math.floor(max));
+    return codeSmithGenius[randomIndex];
+
+
+}
+// 
 const codeSmithHired = hired(5);
 console.log("Codesmith Genius who was hired -", codeSmithHired);
+
+
+
+
+
+
+
 
 
 console.log("\n\n*********************************************************************");
@@ -34,7 +39,7 @@ console.log(    "**********    Hired using optional parameters    **************
 console.log("\n")
 
 // optional it means num2 is not required 
-function hired_usingOptionalParmeter(randomSeed: number){
+function hired_usingOptionalParmeter(randomSeed?: number){
     if (randomSeed)
         return hired(randomSeed);
     else
@@ -43,6 +48,23 @@ function hired_usingOptionalParmeter(randomSeed: number){
 
 const codeSmithHired_withOptionalParmeter = hired_usingOptionalParmeter(5);
 console.log("Codesmith student who was hired using optional parameter -", codeSmithHired_withOptionalParmeter);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 console.log("\n\n*******************************************************************");
 console.log(    "********** Hired using default parameters    **********************");
@@ -57,6 +79,17 @@ function hired_usingDefaultParameter(randomSeed: number = 10){
 
 const codeSmithHired_usingDefaultParameter = hired_usingDefaultParameter(5);
 console.log("Codesmith student who was hired using default parameter -", codeSmithHired_usingDefaultParameter);
+
+
+
+
+
+
+
+
+
+
+
 
 
 console.log("\n\n***************************************************************");
@@ -79,6 +112,18 @@ let codeSmithStudent = {
 }
 
 company(codeSmithStudent);
+
+
+
+
+
+
+
+
+
+
+
+
 
 console.log("\n\n******************************************************************");
 console.log(    "*********** Interfaces with optional lastName   ******************");
